@@ -2,27 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Buddy Bunker - Profile </title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buddy Bunker</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../Home/main.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
 </head>
 <body>
-<div>
-    <nav>
-        <p>Buddy Bunker</p>
-        <a>Log Out</a>
+
+<div class="navSpace">
+    <nav class="w3-container w3-bar w3-white">
+        <img style="max-width: 120px;"  class="w3-display-topmiddle" src="../Images/Bunkerbuddylogo2.png">
+        <a href="../LoginSignup/indexLogin.html" class="w3-right w3-button w3-white w3-hover-white" style="padding-top: 11px;">
+            LOG OUT</a>
     </nav>
 </div>
 
 <div>
-    <article>
-        <h1>IMAGE pulled from FB login</h1>
-        <p>Name</p> <p>Zip Code<input type="text"></p>
-        <p>Bio</p>
-        <p>Introduce Yourself and let other golfers know more about you. 250-500 words or less.</p>
-        <p>My Preferences</p>
-        <p>This can be changed at any time.</p>
+    <article class="profile">
+        <h2 class="center" style="border: black 1px solid; width: 140px; padding-left: 5px;"> IMAGE</h2>
 
-        <form>
-            <p>My Playing Preferences:</p>
+        <h2 class="center">Tom Harry</h2>
+        <!--<h3>Bio</h3>-->
+        <!--<h4>Let other golfers know more about you!</h4>-->
+        <!--<p>(Introduce Yourself and let other golfers know more about you in 250-500 words or less.)</p>-->
+
+        <!--<textarea rows="6" style="width: 70%"></textarea>-->
+        <hr>
+        <h3>My Preferences </h3>
+        <p class="together">(This can be changed at any time.)</p>
+
+    <div>
+        <form class="checkboxes">
+            <label>Zip Code: <input type="text"></label>
+            <h4>My Playing Preferences:</h4>
 
             <label>
             <input type="checkbox" name="">
@@ -39,13 +60,59 @@
                 Smoke
             </label>
 
+            <br>
             <label>
                 <input type="checkbox" name="">
-                Brings their spouse
+                Golfs with significant other
             </label>
 
-            <p>I Don't Mind Playing With Someone Who:</p>
+            <label>
+                <input type="checkbox" name="">
+                Golf with other women
+            </label>
 
+            <label>
+                <input type="checkbox" name="">
+                Competitive
+            </label>
+
+            <br>
+            <label>
+                <input type="checkbox" name="">
+                Have fun/A good time/Bring the party
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Network
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Golf with my child(ren)
+            </label>
+
+            <br>
+            <p>Your Handicap:</p>
+            <div class="slidecontainer">
+                <input type="range" min="55" max="155" value="handicap" class="slider" id="handicap">
+                <p>Value:<span id="handicapRange"></span></p>
+            </div>
+
+            <br>
+            <p>Desired Length of Game for 18 Holes (Hours):</p>
+            <div class="slidecontainer">
+                <input type="range" min="2" max="6" value="length" class="slider" id="length">
+                <p>Value:<span id="lengthRange"></span></p>
+            </div>
+
+        </form>
+    </div>
+
+<hr>
+    <div>
+        <h4>I Don't Mind Playing With Someone Who:</h4>
+        <form>
             <label>
                 <input type="checkbox" name="">
                 Drink
@@ -61,31 +128,105 @@
                 Smoke
             </label>
 
+            <br>
             <label>
                 <input type="checkbox" name="">
-                Brings their spouse
+                Golfs with significant other
             </label>
 
+            <label>
+                <input type="checkbox" name="">
+                Golf with other women
+            </label>
 
+            <label>
+                <input type="checkbox" name="">
+                Competitive
+            </label>
 
+            <br>
+            <label>
+                <input type="checkbox" name="">
+                Have fun/A good time/Bring the party
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Network
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Golf with my child(ren)
+            </label>
+
+            <br>
+            <p>Has a handicap of:</p>
+            <div class="slidecontainer">
+                <input type="range" min="55" max="155" value="handicap" class="slider" id="theirHandicap">
+                <p>Value:<span id="theirHandicapRange"></span></p>
+            </div>
+
+            <br>
+            <p>Desired Length of Game for 18 Holes (Hours):</p>
+            <div class="slidecontainer">
+                <input type="range" min="2" max="6" value="length" class="tsSlider" id="theirLength">
+                <p>Value:<span id="theirLengthRange"></span></p>
+            </div>
         </form>
-    </article>
+    </div>
+ </article>
 </div>
 
-<div>
+<div class="center">
     <button>Save</button>
-</div>
+</div> <br>
 
-<div>
+<div class="center">
     <button>Find My Buddy Bunker</button>
 </div>
-
+<br>
 
 <div>
     <footer>
-
+        <p id="rights">&copy; 2018 Buddy Bunker  </p>
     </footer>
 </div>
+
+
+<script>
+    var hslider = document.getElementById("handicap");
+    var houtput = document.getElementById("handicapRange");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+
+    var lslider = document.getElementById("length");
+    var loutput = document.getElementById("lengthRange");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+
+    var thslider = document.getElementById("theirHandicap");
+    var thoutput = document.getElementById("theirHandicapRange");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+
+    var tlSlider = document.getElementById("theirLength");
+    var tlOutput = document.getElementById("theirLengthRange");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
 
 </body>
 </html>
