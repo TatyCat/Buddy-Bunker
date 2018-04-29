@@ -1,0 +1,25 @@
+body {
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: lightgreen;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
+.login{
+    text-align: center;
+
+}
+
+#randomBox{
+    border: 4px solid darkgreen;
+    padding: 
+    margin: 3px;
+}
