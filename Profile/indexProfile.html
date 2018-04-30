@@ -197,34 +197,34 @@
 <script>
     var hslider = document.getElementById("handicap");
     var houtput = document.getElementById("handicapRange");
-    output.innerHTML = slider.value;
+    houtput.innerHTML = hslider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
+    hslider.oninput = function() {
+        houtput.innerHTML = this.value;
     }
 
     var lslider = document.getElementById("length");
     var loutput = document.getElementById("lengthRange");
-    output.innerHTML = slider.value;
+    loutput.innerHTML = lslider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
+    lslider.oninput = function() {
+        loutput.innerHTML = this.value;
     }
 
     var thslider = document.getElementById("theirHandicap");
     var thoutput = document.getElementById("theirHandicapRange");
-    output.innerHTML = slider.value;
+    thoutput.innerHTML = thslider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
+    thslider.oninput = function() {
+        thoutput.innerHTML = this.value;
     }
 
-    var tlSlider = document.getElementById("theirLength");
-    var tlOutput = document.getElementById("theirLengthRange");
-    output.innerHTML = slider.value;
+    var tlslider = document.getElementById("theirLength");
+    var tloutput = document.getElementById("theirLengthRange");
+    tloutput.innerHTML = tlslider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
+    tlslider.oninput = function() {
+        tloutput.innerHTML = this.value;
     }
 </script>
 
